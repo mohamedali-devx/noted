@@ -1,0 +1,88 @@
+:root {
+    --main-color: rgb(255, 145, 0);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+}
+p.h {
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-family: "Edu NSW ACT Cursive", sans-serif;
+}
+header {  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav ul{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a {
+    color: white;
+}
+ul {
+    list-style-type: none;
+}
+header a{
+    text-decoration: none;
+}
+a {
+    font-family: "Work Sans", sans-serif;
+}
+button {
+    cursor: pointer;
+}
+
+.Notes h2{
+    margin: 20px;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    text-align: center;
+    color: var(--main-color);
+}
+.Note-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Note h3 {
+    color: black;
+}
+.Note {
+    background-color: white;
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid var(--main-color);
+}
+
+footer {
+    text-align: center;
+    background-color: var(--main-color);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+}
