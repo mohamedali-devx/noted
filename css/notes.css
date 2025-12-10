@@ -77,6 +77,119 @@ button {
     border: 2px solid var(--main-color);
 }
 
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.create button {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 87%;
+    box-shadow: 0 0 5px 1px var(--main-color);
+    border-color: var(--main-color);
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+/* إخفاء الـ checkbox */
+.note-toggle {
+    display: none;
+}
+
+/* زر فتح */
+.open-note-btn {
+    padding: 12px 20px;
+    background: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* الخلفية */
+.note-popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s ease;
+}
+
+/* إظهار البوب اب عند اختيار الـ checkbox */
+.note-toggle:checked ~ .note-popup {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* صندوق النوت */
+.note-box {
+    background: #fff;
+    width: 400px;
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.20);
+}
+
+.note-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.note-box textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    resize: none;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+/* أزرار */
+.actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.cancel-btn, .save-btn {
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+}
+
+.cancel-btn {
+    background: #ddd;
+}
+
+.save-btn {
+    background: var(--main-color);
+    color: white;
+}
+
+
+
+
+
+
+
+
 footer {
     text-align: center;
     background-color: var(--main-color);
